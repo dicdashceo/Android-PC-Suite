@@ -1,0 +1,5 @@
+@Override
+public void onCreate(@Nullable Bundle savedInstanceState) {
+  super.onCreate(savedInstanceState);
+  devicePickerLauncher = Discovery.create(this).registerForResult(this, handleDevices);
+}
